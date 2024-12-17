@@ -1,0 +1,12 @@
+CREATE DATABASE db_cicilan;
+USE db_cicilan;
+
+CREATE TABLE cicilan (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    harga_kendaraan DECIMAL(15, 2),
+    uang_muka DECIMAL(15, 2),
+    tenor INT,
+    bunga DECIMAL(5, 2),
+    jumlah_pinjaman DECIMAL(15, 2),
+    cicilan_per_bulan DECIMAL(15, 2)
+);
